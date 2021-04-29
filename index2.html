@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css'>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <title>欢迎来到HouHaoDan的主页 | Welcome to Hou HaoDan's page</title>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 卡片设计 -->
+    <div class="blog-slider">
+      <div class="blog-slider_wrp swiper-wrapper">
+
+          <div class="blog-slider_item swiper-slide">
+              <div class="blog-slider_img">
+                  <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+              </div>
+              <div class="blog-slider_content">
+                  <span class="blog-slider_code">欢迎来到HouHaoDan的主页</span>
+                  <div class="blog-slider_title">高岸为谷，深谷为陵</div>
+                  <div class="blog-slider_text">咬定青山不放松，立根原在破岩中。<br/>千磨万击还坚劲，任尔东西南北风。<br/>年方22，毕业自计算机科学与技术专业，现就职于xxx</div>
+                  <a href="#" class="blog-slider_button">︿(￣︶￣)︿暂时还没想好该填些啥</a>
+              </div>
+          </div>
+
+          <!-- 相同的格式，复制了两次，修改自己需要的内容 -->
+          <div class="blog-slider_item swiper-slide">
+              <div class="blog-slider_img">
+                <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="">
+              </div>
+              <div class="blog-slider_content">
+                <span class="blog-slider_code">欢迎访问 | Welcome</span>
+                <div class="blog-slider_title">CSDN - 梦栖</div>
+                <div class="blog-slider_text">技术不断从简，记录日常开发bug与解决方法。</div>
+                <a href="https://blog.csdn.net/qq_42275855" target="_blank" class="blog-slider_button">去围观</a>
+              </div>
+          </div>
+            
+          <div class="blog-slider_item swiper-slide">
+              <div class="blog-slider_img">
+                <img src="https://source.unsplash.com/LJ9KY8pIH3E" alt="">
+              </div>
+              <div class="blog-slider_content">
+                <span class="blog-slider_code">欢迎访问 | Welcome</span>
+                <div class="blog-slider_title">Github - HouHaoDan</div>
+                <div class="blog-slider_text">代码改变生活，分享有趣的小技术与开源项目。</div>
+                <a href="https://github.com/HouHaoDan" target="_blank" class="blog-slider_button">去围观</a>
+              </div>
+          </div>
+
+          <div class="blog-slider_item swiper-slide">
+            <div class="blog-slider_img">
+              <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="blog-slider_content">
+              <span class="blog-slider_code">欢迎访问 | Welcome</span>
+              <div class="blog-slider_title">知乎 - 梦栖</div>
+              <div class="blog-slider_text">生活充满乐趣，点点滴滴都值得细细回味。</div>
+              <a href="https://www.zhihu.com/people/xiujing-10" target="_blank" class="blog-slider_button">去围观</a>
+            </div>
+          </div>
+
+      </div>
+      <div class="blog-slider_pagination"></div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <p>非常感谢 <a href="https://gitee.com/ji-xia-xiaozhen" target="_blank">纪夏小贞</a> 的 <a href="https://gitee.com/ji-xia-xiaozhen/html-demo" target="_blank">Html-Demo</a></p>
+  </div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js'></script>
+  <script src="./js/script.js"></script>
+  <script type="text/javascript">
+    $(function() {
+        //判断屏幕宽度
+        var winWide = window.screen.width;  //获取当前屏幕分辨率
+        //alert(winWide);
+        var wideScreen = false;
+        if (winWide > 600) {  //600及以下分辨率
+            window.location = "index.html";//加载index2.html
+        } /*else {  //大于600的分辨率
+            window.location = "index1.html";//加载index1.html
+        }*/
+    });
+</script>
+</body>
+</html>
